@@ -66,7 +66,7 @@ def combine(n, name):
     """
     graph = read_file(name)
     min_cut = 1000
-    for i in range(n):
+    for _ in range(n):
         G = copy.deepcopy(graph)
         cut = karger(G)
         if cut < min_cut:
